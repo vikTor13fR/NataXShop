@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Kurale', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    z-index: 1;
+}
+
+.product-price {
+    margin-top: 5px;
+}
+
+.product-info {
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.title-price {
+    font-size: 25px;
+    color: purple;
+}
+
+.title-price1 {
+    font-size: 20px;
+}
+
+.product-title {
+    font-family: 'Kurale', serif;
+    font-size: 30px;
+}
+
+.product-rating {
+    display: flex;
+    font-size: 30px;
+    color: #f0c14b;
+}
+
+.product>img {
+    /* max-height: 400px;
+    width: 300px; */
+    width: 80%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product>button {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+}

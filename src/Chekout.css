@@ -1,0 +1,23 @@
+.chekout {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+
+.chek-info {
+    height: 200px;
+    width: 100%;
+    background-color: palegreen;
+}
+
+.check-title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+.chekout-ad {
+    width: 100%;
+    margin-bottom: 10px;
+}

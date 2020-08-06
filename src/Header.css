@@ -1,0 +1,114 @@
+@fontface {
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-family: 'Ultra', serif;
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Mystery Quest', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Fascinate+Inline&family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Ultra&display=swap');
+.header {
+    /* background-color: mediumslateblue; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); */
+    background: #ff00cc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-logo {
+    width: 50px;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-right: 0;
+    /* animation: header-logo-spin infinite 20s linear; */
+}
+
+
+/* @keyframes header-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+.logo-name {
+    font-family: 'Aclonica', sans-serif;
+    margin-right: 20px;
+    color: gold;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logoname {
+    font-family: 'Mystery Quest', cursive;
+    color: mediumspringgreen;
+}
+
+.search-icon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: gold;
+}
+
+.header-search {
+    display: flex;
+}
+
+.search-input {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+
+/**Heder NAv*/
+
+.header-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-link {
+    color: gold;
+    text-decoration: none;
+}
+
+.header-option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.optionLineOne {
+    font-size: 10px;
+}
+
+.optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header-basket {
+    display: flex;
+    align-items: center;
+}
+
+.header-basket-count {
+    margin-left: 10px;
+    margin-right: 10px;
+}

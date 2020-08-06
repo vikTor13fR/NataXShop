@@ -1,0 +1,47 @@
+@fontface {
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-family: 'Ultra', serif;
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Fascinate Inline', cursive;
+    font-family: 'Mystery Quest', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Fascinate+Inline&family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Ultra&display=swap');
+.home-text {
+    font-family: 'Mystery Quest', cursive;
+    color: #1e3c72;
+    color: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
+    color: linear-gradient(to right, #2a5298, #1e3c72);
+}
+
+.home {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.home-image {
+    width: 150px;
+    height: 150px;
+    /* width: 15%; */
+    mask-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+    /* mask-image: linear-gradient(to bottom, rgba(233, 233, 444, 1), rgba(222, 0, 0, 0)); */
+    z-index: -1;
+    margin-bottom: -150px;
+}
+
+.home-baner {
+    display: flex;
+    justify-content: space-evenly;
+    height: 170px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
