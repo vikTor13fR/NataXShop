@@ -108,7 +108,12 @@
     align-items: center;
 }
 
+.header-basket-icon {
+    width: 40px;
+}
+
 .header-basket-count {
+    font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
 }
