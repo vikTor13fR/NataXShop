@@ -1,5 +1,13 @@
+@fontface {
+    font-family: 'Righteous', cursive;
+    font-family: 'Rowdies', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies&display=swap');
 .login {
-    background-color: #5ee7df;
+    background: #40E0D0;
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
     height: 120vh;
     display: flex;
     flex-direction: column;
@@ -26,22 +34,31 @@
     flex-direction: column;
     padding: 20px;
     border: 3px solid #b490ca;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .login-container>h1 {
-    font-weight: 500;
+    font-family: 'Rowdies', cursive;
+    color: #764ba2;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
 .login-container>form>h5 {
+    font-family: 'Righteous', cursive;
     margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .login-container>form>input {
     height: 30px;
     margin-bottom: 10px;
-    background-color: thistle;
     width: 98%;
+    border-radius: 5px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
 
 .login-container>p {
@@ -70,6 +87,11 @@
     border: 1px solid;
     margin-top: 10px;
     border-color: darkgrey;
+    background-color: #28a9ae;
+}
+
+.login-reg-button:hover {
+    background-color: #80ffff;
 }
 
 @keyframes App-logo-spin {

@@ -6,8 +6,7 @@
 
 .chekout-product-image {
     object-fit: contain;
-    width: 200px;
-    height: 220px;
+    width: 70%;
 }
 
 .chekout-product-info {
@@ -21,6 +20,7 @@
 
 .chekout-product-rating {
     display: flex;
+    color: #f0c14b;
 }
 
 .chekout-product-info>button {
@@ -29,4 +29,10 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #845a29;
     color: #111;
+    font-weight: 600;
+}
+
+.chekout-product-info>button:hover:active {
+    background: #61dafb;
+    border: darkviolet 1px solid;
 }

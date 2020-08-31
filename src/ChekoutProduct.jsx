@@ -34,7 +34,7 @@ function ChekoutProduct( { id, title, image, price, rating}) {
               }
              </div>
 
-             <button className="btn-remove" onClick={removeFromBasket} >Remove from basket</button>
+             <button className="btn-remove" onClick={removeFromBasket} >Видалити з корзини</button>
 
             </div>
         </div>

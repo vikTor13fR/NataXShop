@@ -9,10 +9,11 @@
     align-items: center;
     justify-content: flex-end;
     margin: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     width: 80%;
     background-color: white;
     z-index: 1;
+    border: darkmagenta 1px;
 }
 
 .product-price {
@@ -20,8 +21,12 @@
 }
 
 .product-info {
-    height: 150px;
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul>li {
+    list-style-type: none;
 }
 
 .title-price {
@@ -45,10 +50,8 @@
 }
 
 .product>img {
-    /* max-height: 400px;
-    width: 300px; */
     width: 80%;
-    object-fit: contain;
+    /* object-fit: contain; */
     margin-bottom: 15px;
 }
 

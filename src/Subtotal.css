@@ -1,3 +1,9 @@
+@fontface {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rowdies', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Rowdies&display=swap');
 .subtotal {
     display: flex;
     flex-direction: column;
@@ -28,4 +34,22 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+}
+
+.sub-text-title {
+    font-family: 'Comfortaa', cursive;
+}
+
+.sub-baner-reklam {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.sub-text-soc {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: steelblue;
 }

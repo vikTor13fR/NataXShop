@@ -4,15 +4,21 @@
     font-family: 'Aclonica', sans-serif;
     font-family: 'Fascinate Inline', cursive;
     font-family: 'Mystery Quest', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Fascinate+Inline&family=Mystery+Quest&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&family=Ultra&display=swap');
 .home-text {
-    font-family: 'Mystery Quest', cursive;
+    font-family: 'Abril Fatface', cursive;
     color: #1e3c72;
     color: -webkit-linear-gradient(to right, #2a5298, #1e3c72);
     color: linear-gradient(to right, #2a5298, #1e3c72);
+    animation: text-shadow 1.5s ease-in-out infinite;
+    padding-right: 10px;
 }
 
 .home {
@@ -39,9 +45,100 @@
 
 .home-baner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 170px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
     /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.home-baner-reklam {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 0;
+    position: sticky;
+}
+
+.tele-baner {
+    width: 30px;
+}
+
+.home-text-soc {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 20px;
+    color: #2a5298;
+    cursor: pointer;
+    box-shadow: 0 2 0 rgba(76, 204, 44, 0.63);
+    border-left: 5px solid #5ee7df;
+    border-radius: 25px;
+    animation: pulse 2s infinite;
+    transition: ease-in-out;
+}
+
+.home-text-soc1 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 20px;
+    color: #2a5298;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #5ee7df;
+    }
+    70% {
+        box-shadow: 0 0 0 10px #5ee7df;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #5ee7df;
+    }
+}
+
+
+/*text*/
+
+@keyframes text-shadow {
+    0% {
+        transform: translateY(0);
+        text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+    }
+    20% {
+        transform: translateY(-1em);
+        text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b, 0 -0.25em 0 #fefc4b;
+    }
+    40% {
+        transform: translateY(0.5em);
+        text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd, 0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+    }
+    60% {
+        transform: translateY(-0.25em);
+        text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd, 0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+    }
+    80% {
+        transform: translateY(0);
+        text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    * {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        width: 100%;
+    }
 }

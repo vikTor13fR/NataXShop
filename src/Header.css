@@ -19,11 +19,8 @@
     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); */
     background: #ff00cc;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #333399, #ff00cc);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .header-logo {
@@ -77,12 +74,19 @@
 
 /**Heder NAv*/
 
+.header-nav>Link {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header-link {
+    display: flex;
+    justify-content: space-between;
     color: gold;
     text-decoration: none;
 }
@@ -117,3 +121,27 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    * {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: auto;
+        min-height: auto;
+    }
+}
+
+
+/* @media (min-width: 576px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0;
+    }
+} */
+
+@media screen and (max-width: 768px) {}

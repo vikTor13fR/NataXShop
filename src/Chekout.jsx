@@ -8,12 +8,7 @@ function Chekout() {
     const [{ basket }] = useStateValue();
     return (
         <div className="chekout">
-            <div className="chek-info">
-                <h1>All Contact</h1>
-                <h2>@_kreyzik_</h2>
-                <h2>@viktorshop</h2>
-                <h2>+380678767010</h2>
-            </div>
+            
             <div className="chekout-left">
                 <img className="chekout-ad" src="" alt="" />
             {basket?.length === 0 ? (
@@ -23,7 +18,7 @@ function Chekout() {
                 </div>
             ) : (
                 <div>
-                    <h2 className="chek-title">Your Shopping Basket</h2>
+                    <h2 className="chek-title">Ваш список товарів</h2>
 
                     {basket?.map((item) => {
                         console.log(item)
@@ -43,7 +38,7 @@ function Chekout() {
             </div>
             {basket.length > 0 && (
                 <div className="chekout-right">
-                    <h2>Subtotal</h2>
+                    <h2>Загальна сумма списку</h2>
                     <Subtotal />
                 </div>
             )}

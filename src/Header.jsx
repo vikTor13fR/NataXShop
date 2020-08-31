@@ -18,7 +18,7 @@ function Header() {
     }
 
     return (
-        <nav className="header">
+        <nav className="header mr-auto">
             <Link to="/">
               <img className="header-logo" src={logo} alt="" />
             </Link>
